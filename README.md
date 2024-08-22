@@ -48,7 +48,7 @@ git clone https://github.com/isaudkhan/Deploy-NodeJs-App-AWS-EC2.git
 
 2. Setup the following environment variables - `(.env)` file
 ```
-DOMAIN= ""
+DOMAIN= "http://localhost:3000"
 PORT=3000
 STATIC_DIR="./client"
 
