@@ -1,0 +1,53 @@
+******************************************************
+ubuntu@affordable-vervet:~/AWS-Session$ npm run start
+******************************************************
+
+> stripe-integration@1.0.0 start
+> node server.js
+
+internal/modules/cjs/loader.js:818
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/AWS-Session/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/ubuntu/AWS-Session/server.js:1:17)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/ubuntu/AWS-Session/server.js' ]
+}
+
+*******************************************************************
+ubuntu@affordable-vervet:~/AWS-Session$ npm install express --save
+*******************************************************************
+
+added 100 packages, and audited 101 packages in 21s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+3 moderate severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+**************************************************
+ubuntu@affordable-vervet:~/AWS-Session$ npm start
+**************************************************
+
+> stripe-integration@1.0.0 start
+> node server.js
+
+Server listening on port: 3000
+You may access you app at: http://localhost:3000
