@@ -54,6 +54,7 @@ STATIC_DIR="./client"
 
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
+```
 
 3. Initialise and start the project
 ```
